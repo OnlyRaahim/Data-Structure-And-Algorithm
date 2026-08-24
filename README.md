@@ -6,7 +6,6 @@ I am studying DSA as part of my coursework at **NED University of Engineering & 
 
 Alongside my coursework, I am also actively practicing on **LeetCode**, where I am trying to solve as many problems as I can and strengthen my understanding of algorithms and data structures.
 
-
 ---
 
 ## 🎯 Goals
