@@ -42,6 +42,6 @@ int main(){
         cout<<names[i]<<" GPA is: "<<gpa<<endl;
 
     }
-    return 0;
 
+    return 0;
 }
