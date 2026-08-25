@@ -39,7 +39,6 @@ int main(){
         }
 
         double gpa= total/count;
-
         cout<<names[i]<<" GPA is: "<<gpa<<endl;
 
     }
