@@ -10,20 +10,26 @@ int main(){
     cout<<"Enter Number Of Subjects:"<<endl;
     cin>>subjects;
 
-    string names[students];
+    string studentNames[students];
+    string subjectName[subjects];
     double grades[students][subjects];
+
+    for(int j=0; j<subjects; j++){
+        cout<<"\nEnter Name Of Subject "<<j+1<<endl;
+        cin>>subjectName[j];
+    }
 
     for(int i=0; i<students; i++){
         cout<<"\nEnter Name Of Student "<<i+1<<":"<<endl;
-        cin>>names[i];
+        cin>>studentNames[i];
         cout<<endl;
 
-        cout<<"Enter Grades Of "<<names[i]<<":"<<endl;
-        cout<<"Enter -1 If "<<names[i]<<" Has Not Taken The Subject!! "<<endl;
+        cout<<"Enter Grades Of "<<studentNames[i]<<":"<<endl;
+        cout<<"Enter -1 If "<<studentNames[i]<<" Has Not Taken The Subject!! "<<endl;
         cout<<endl;
 
         for(int j=0; j<subjects; j++){
-            cout<<"Enter Grades Of Subject "<<j+1<<":"<<endl;
+            cout<<"Enter Grades Of "<<subjectName[j]<<":"<<endl;
             cin>>grades[i][j];
         }
     }
@@ -41,7 +47,7 @@ int main(){
 
         double gpa=total/count;
         cout<<endl;
-        cout<<names[i]<<" GPA is: "<<gpa<<endl;
+        cout<<studentNames[i]<<" GPA is: "<<gpa<<endl;
     }
 
 }
