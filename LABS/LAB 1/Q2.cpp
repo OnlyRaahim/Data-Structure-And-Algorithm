@@ -2,8 +2,7 @@
 using namespace std;
 
 int main(){
-    int students;
-    int subjects;
+    int students,subjects;
 
     cout<<"Enter Number Of Students:"<<endl;
     cin>>students;
@@ -15,14 +14,16 @@ int main(){
     double grades[students][subjects];
 
     for(int i=0; i<students; i++){
-        cout<<"Enter Name for Student "<<i+1<<endl;
+        cout<<"\nEnter Name Of Student "<<i+1<<":"<<endl;
         cin>>names[i];
-        
-        cout<<"\nEnter Grade of "<<names[i]<<endl;
-        cout<<"Enter -1 If Student Has Not Taken The Subject"<<endl;
         cout<<endl;
-        for(int j=0;j<subjects; j++){
-            cout<<"Enter Grade of Subject "<<j+1<<endl;
+
+        cout<<"Enter Grades Of "<<names[i]<<":"<<endl;
+        cout<<"Enter -1 If "<<names[i]<<" Has Not Taken The Subject!! "<<endl;
+        cout<<endl;
+
+        for(int j=0; j<subjects; j++){
+            cout<<"Enter Grades Of Subject "<<j+1<<":"<<endl;
             cin>>grades[i][j];
         }
     }
@@ -32,16 +33,15 @@ int main(){
         int count=0;
 
         for(int j=0; j<subjects; j++){
-            if(grades[i][j] !=-1){
+            if(grades[i][j] != -1){
                 total+=grades[i][j];
                 count++;
             }
         }
 
-        double gpa= total/count;
+        double gpa=total/count;
+        cout<<endl;
         cout<<names[i]<<" GPA is: "<<gpa<<endl;
-
     }
 
-    return 0;
 }
