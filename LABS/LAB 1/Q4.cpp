@@ -35,6 +35,5 @@ if(result != -1){
 else {
     cout<<result<<endl;
 }
-
     return 0;
 }
