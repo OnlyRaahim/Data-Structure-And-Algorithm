@@ -2,7 +2,7 @@
 
 class Solution {
 public:
-    int minOperations(vector<int>& nums, int k) {
+    int minOperations vector<int>& nums, int k) {
         int count=0;
         
 
@@ -12,7 +12,7 @@ public:
             }
 
         }
-        
+    
         return count;
     }
 };
