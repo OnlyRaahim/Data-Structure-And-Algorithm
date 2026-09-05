@@ -54,7 +54,9 @@ void removeDuplicate(LinkedList& list){
         if(current->data==current->next->data){
             current->next=current->next->next;
         }
+        else{
         current=current->next;
+        }
     }
     
 }
@@ -63,6 +65,7 @@ int main(){
     LinkedList list;
     
 
+    list.insert(1);
     list.insert(1);
     list.insert(1);
     list.insert(2);
