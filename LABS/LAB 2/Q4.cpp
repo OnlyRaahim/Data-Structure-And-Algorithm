@@ -57,7 +57,6 @@ bool isPalindrome(){
     }
     return true;
 }
-
 };
 
 int main(){
