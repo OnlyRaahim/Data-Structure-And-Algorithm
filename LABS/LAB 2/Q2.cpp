@@ -6,8 +6,8 @@ class Node{
     int data;
     Node *next;
 
-    Node(){
-        data=0;
+    Node(int value){
+        data=value;
         next=nullptr;
     }
 };
@@ -21,9 +21,8 @@ class LinkedList{
     }
 
     void insert(int value){
-        Node *newNode= new Node();
-        newNode->data=value;
-        newNode->next=nullptr;
+        Node *newNode= new Node(value);
+        
 
         if(head==NULL){
             head=newNode;
