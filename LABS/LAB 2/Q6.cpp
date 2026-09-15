@@ -1,19 +1,20 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+class Node{
+    public:
+    int data;
+    Node* next;
+
+    Node(int value){
+        data=value;
+        next=NULL;
+    }
+    
+};
+
 class Stack{
     public:
-    struct Node{
-        int data;
-        Node* next;
-
-        Node(int value){
-            data=value;
-            next=NULL;
-        }
-    };
-
-
     Node* top;
 
     Stack(){
