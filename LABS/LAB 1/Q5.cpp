@@ -43,4 +43,5 @@ int main(){
     cout<<binarySearch(arr,target)<<endl;
 
     return 0;
+    
 }
