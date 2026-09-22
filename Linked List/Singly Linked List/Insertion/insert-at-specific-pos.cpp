@@ -85,7 +85,7 @@ int main (){
     list.insert(40);
 
     list.insertAtSpecificPos(6,25);
-
     list.display();
+
     return 0;
 }
