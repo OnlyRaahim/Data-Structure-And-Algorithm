@@ -75,6 +75,7 @@ class LinkedList{
         }
         cout<<"NULL"<<endl;
     }
+    
 };
 
 int main (){
