@@ -82,7 +82,6 @@ class DoublyLinkedList{
                 temp = temp->next;
             }
 
-            
             int value = current->data;
             current->data = maxNode->data;
             maxNode->data = value;
