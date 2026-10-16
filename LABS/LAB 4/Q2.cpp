@@ -19,6 +19,7 @@ string process(string s){
         result+=st[i];
     }
     return result;
+    
 }
 
 int main(){
