@@ -18,8 +18,7 @@ string process(string s){
     for(int i=0; i<st.size(); i++){
         result+=st[i];
     }
-    return result;
-    
+    return result; 
 }
 
 int main(){
