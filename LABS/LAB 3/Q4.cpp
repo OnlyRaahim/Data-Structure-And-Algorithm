@@ -89,7 +89,6 @@ class DoublyLinkedList{
             current = current->next;
         }
     }
-    
 };
 
 int main(){
