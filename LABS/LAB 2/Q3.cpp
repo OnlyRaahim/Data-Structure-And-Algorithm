@@ -35,6 +35,7 @@ class LinkedList{
         }
 
         temp->next=newNode;
+        
     }
 
     Node* getMiddle(Node* head){
